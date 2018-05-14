@@ -8,7 +8,7 @@ using namespace std;
  * 复杂度 O(n)
  */
 
-int maxSubsquenceAns(int num[], int len) {
+int maxSubsquenceSum(int num[], int len) {
 	int thisSum = 0, maxSum = 0;
 	for(int i = 0; i <  len; ++i) {
 		thisSum += num[i];
@@ -22,7 +22,7 @@ int maxSubsquenceAns(int num[], int len) {
 
 int main() {
 	int num[5] = {-3, 8, -6, 9, -1};
-	cout << "maxSum = " << maxSubsquenceAns(num, 5) << endl;
+	cout << "maxSubsquenceSum = " << maxSubsquenceSum(num, 5) << endl;
 
 	return 0;
 }
